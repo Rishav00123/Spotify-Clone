@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: music for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="spotify-img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <div class="close invert">
+                <img src="cross.svg" alt=""><p style="color:white ;">hii</p>
+            </div>
+            <div class="library">
+                <div class="library-1">
+                    <p>Your Library</p>
+                    <!-- <button id="create">Create</button> -->
+                </div>
+                <div class="song-list ">
+                    <ul>
+
+                    </ul>
+
+                </div>
+                <!-- <div class="playlist-podcast">
+                    <div class="playlist">
+                        <p>Create your first Playlist</p>
+                        <span style="display: block;">It's easy, we'll help you</span>
+                        <button id="playlist">Create Playlist</button>
+                    </div>
+                    <div class="playlist podcast">
+                        <p>Let's find some podcasts to follow</p>
+                        <span style="display: block;">we'll keep you updated on new episodes</span>
+                        <button id="playlist">Browse Podcasts</button>
+                    </div>
+                </div> -->
+
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">AboutAds</a>
+                    <a href="https://www.spotify.com/in-en/accessibility">Accessibility</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="right">
+             <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+
+                        <img width="40" class="invert hamburger" src="hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+
+            <div class="trending-songs">
+                <div class="trending">
+                    <p>Trending Songs</p>
+                    <Button id="show-all">Show all</Button>
+                </div>
+                <div class="cards-container">
+
+                    <div class="card" >
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+
+                        <img class="spotify-img" src="spotify-img/1.jpg" alt="first">
+                        <h2 class="trending-songs-title">Dil Lagana Mana Tha</h2>
+                        <p class="trending-songs-singers">Krish Mondal, Kishore Mondal, Dev Sadanaa</p>
+                    </div>
+                    <div class="card ">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/2.jpg" alt="first">
+                        <h2 class="trending-songs-title">Samjhawan</h2>
+                        <p class="trending-songs-singers">Jawad Ahmad, Sharib Toshi, Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/3.jpg" alt="first">
+                        <h2 class="trending-songs-title">Gehra Hua </h2>
+                        <p class="trending-songs-singers">Shashwat Sachdeva, Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/4.jpg" alt="first">
+                        <h2 class="trending-songs-title">Woh Ladki - Reimagined</h2>
+                        <p class="trending-songs-singers">Javed Mohsin, Dev Negi</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/5.jpg" alt="first">
+                        <h2 class="trending-songs-title">KALYANI</h2>
+                        <p class="trending-songs-singers">ARJN, KDS, FIFTY4, RONN</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/6.jpg" alt="first">
+                        <h2 class="trending-songs-title">Tu Jaane Hai Kahan</h2>
+                        <p class="trending-songs-singers">Lucky Ali</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/7.jpg" alt="first">
+                        <h2 class="trending-songs-title">Kithe Reh Gaya</h2>
+                        <p class="trending-songs-singers">Neeti Mohan, Abhijit Vaghani</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" />
+                            </svg>
+                        </div>
+                        <img class="spotify-img" src="spotify-img/8.jpg" alt="first">
+                        <h2 class="trending-songs-title">Khat</h2>
+                        <p class="trending-songs-singers">Navjot Ahuja</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src="prev.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="next.svg" alt="">
+                    </div>
+                    <div class="volume-time">
+                        <div class="songtime">
+
+                    </div>
+                    <div class="volume">
+                        <img title="Volume" src="volumeon.svg" alt="">
+
+                        
+                    </div>
+                    <div class="range">
+                            <input type="range" name="volume">
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
